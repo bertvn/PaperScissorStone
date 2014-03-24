@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace psstest
 {
-    abstract class Hand
+    public abstract class Hand
     {
         public abstract int getID();
         public abstract String getName();

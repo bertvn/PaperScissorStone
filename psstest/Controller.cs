@@ -6,22 +6,13 @@ using System.Threading.Tasks;
 
 namespace psstest
 {
-    class Controller
+    public class Controller
     {
         public Factory ify;
 
         public Controller()
         {
             ify = new Factory();
-        }
-
-        public int play(int i) {
-            Hand player = getPlayerHand(i);
-            System.Console.WriteLine("you picked {0}", player.getName());
-            Hand cpu = getCpuHand();
-            System.Console.WriteLine("computer picked {0}", cpu.getName());
-            int winner = match(player.getID(), cpu.getID());
-            return winner;
         }
 
         public Hand getPlayerHand(int i){

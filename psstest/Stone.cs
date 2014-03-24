@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace psstest
 {
-    class Stone : Hand
+    public class Stone : Hand
     {
         public override int getID()
         {

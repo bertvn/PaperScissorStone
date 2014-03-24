@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace psstest
 {
@@ -10,9 +11,8 @@ namespace psstest
     {
         static void Main(string[] args)
         {
-            Controller ctrl = new Controller();
-            new View(ctrl);
-            System.Console.ReadLine();
+            Application.EnableVisualStyles();
+            Application.Run(new Form1());
         }
     }
 }

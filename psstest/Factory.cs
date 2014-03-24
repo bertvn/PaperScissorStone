@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace psstest
 {
-    class Factory
+    public class Factory
     {
 
 
