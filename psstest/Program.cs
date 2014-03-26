@@ -9,6 +9,9 @@ namespace psstest
 {
     class Program
     {
+        /// <summary>
+        /// main class of the program
+        /// </summary>
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();

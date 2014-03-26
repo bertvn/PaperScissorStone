@@ -12,7 +12,12 @@ namespace psstest
 {
     public partial class Form1 : Form
     {
+        //controller handels the execution of the game
         public Controller control = null;
+
+        /// <summary>
+        /// constructor for Form1 class
+        /// </summary>
         public Form1()
         {
             control = new Controller();
@@ -21,18 +26,27 @@ namespace psstest
             
         }
 
+        /// <summary>
+        /// button1 press starts the game with player choosing paper
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             label3.Text = "Paper";
             play(1);
         }
 
+        /// <summary>
+        /// button2 press starts the game with player choosing scissor
+        /// </summary>
         private void button2_Click(object sender, EventArgs e)
         {
             label3.Text = "Scissor";
             play(2);
         }
 
+        /// <summary>
+        /// button3 press starts the game with player choosing stone
+        /// </summary>
         private void button3_Click(object sender, EventArgs e)
         {
             label3.Text = "Stone";
@@ -48,6 +62,10 @@ namespace psstest
             printResult(winner);
         }
 
+        /// <summary>
+        /// prints the result in label2
+        /// </summary>
+        /// <param name="i">int containing the outcome of the match. 1-3</param>
         private void printResult(int i)
         {
             switch (i)
@@ -64,6 +82,9 @@ namespace psstest
             }
         }
 
+        /// <summary>
+        /// resets labels to original text
+        /// </summary>
         private void button4_Click(object sender, EventArgs e)
         {
             label1.Text = "computer input";
